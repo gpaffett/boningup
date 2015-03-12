@@ -1,5 +1,7 @@
 package net.paffett.boningup;
 
+import java.util.Arrays;
+
 class ArrayCopyDemo {
     public static void main(String[] args) {
         char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',
@@ -10,7 +12,7 @@ class ArrayCopyDemo {
         System.out.println(new String(copyTo1));
         
         
-        char[] copyTo2 = java.util.Arrays.copyOfRange(copyFrom, 2, 9);
+        char[] copyTo2 = Arrays.copyOfRange(copyFrom, 2, 9);
         
         System.out.println(new String(copyTo2));        
     }
